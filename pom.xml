@@ -10,6 +10,24 @@
     <version>1.0.0-SNAPSHOT</version>
     <name>Slick Results Import Tool</name>
     <description>This tool for importing various test framework reports, such as junit xml report</description>
+    <url>http://github.com/slickqa/slick-results-import-tool</url>
+    <issueManagement>
+        <system>Github</system>
+        <url>http://github.com/slickqa/slick-results-import-tool/issues</url>
+    </issueManagement>
+    <developers>
+        <developer>
+            <id>sharonlambson</id>
+            <name>Sharon Lambson</name>
+            <email>sharonlambson@gmail.com</email>
+            <url>https://github.com/sharonlambson</url>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>America/Denver</timezone>
+        </developer>
+    </developers>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -18,6 +36,12 @@
             <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
+
+    <scm>
+        <connection>scm:git:https://github.com/slickqa/slick-results-import-tool.git</connection>
+        <developerConnection>scm:git:https://github.com/slickqa/slick-results-import-tool.git</developerConnection>
+        <url>http://github.com/slickqa/slick-results-import-tool</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
