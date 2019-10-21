@@ -25,6 +25,11 @@ public class SlickResultsImportTool {
             SlickDataSource dataSource = new SlickJunitDataSource();
             dataSource.setTestRunMappingFile(testRunMappingFile);
 
+            if (jUnitTestSuites.getSuites() == null) {
+                System.out.println("jUnitTestSuites.getSuites() is null, which means that no test results were found in the xml file. Cannot continue test!");
+                System.exit(-1);
+            }
+
             for (int x=0; x< jUnitTestSuites.getSuites().size(); x++) {
                 List<JUnitTestCase> junitTests = jUnitTestSuites.getSuites().get(x).getTests();
                 for (JUnitTestCase junitTest : junitTests) {
